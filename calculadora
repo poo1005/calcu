@@ -1,0 +1,83 @@
+Console.WriteLine("---------------------");
+            Console.WriteLine("CALCULADORA");
+            Console.WriteLine("---------------------");
+
+            Console.WriteLine("Opcion 1 : suma ");
+            Console.WriteLine("Opcion 2 : resta");
+            Console.WriteLine("Opcion 3 : multiplicacion");
+            Console.WriteLine("Opcion 4 : division");
+            Console.WriteLine("seleccione la opcion que desea");
+            int opcion = int.Parse(Console.ReadLine());
+
+
+
+            if (opcion == 1)
+            {
+                // suma
+                Console.Clear();
+                Console.WriteLine("-------------SUMA------------");
+                Console.WriteLine("Ingrese el primer numero");
+                int num1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo numero a sumar");
+                int num2 = int.Parse(Console.ReadLine());
+                int res = num1 + num2;
+
+                Console.WriteLine(" El resultado es : " + res);
+
+
+            }
+            else if(opcion == 2)
+            {
+                //resta
+                Console.Clear();
+                Console.WriteLine("-------------RESTA-------------");
+                Console.WriteLine("Ingrese el primer numero");
+                int num1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo numero a restar");
+                int num2 = int.Parse(Console.ReadLine());
+                int res = num1 - num2;
+
+                Console.WriteLine(" El resultado es : " + res);
+            }
+            else if(opcion == 3)
+            {
+                //multiplicacion
+                Console.Clear();
+                Console.WriteLine("----------MULTIPLICACION-----------");
+                Console.WriteLine("Ingrese el primer numero");
+                int num1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo numero a multiplicar");
+                int num2 = int.Parse(Console.ReadLine());
+                int res = num1 * num2;
+
+                Console.WriteLine(" El resultado es : " + res);
+            }
+            else if(opcion == 4)
+            {
+                //division
+                Console.Clear();
+                Console.WriteLine("--------------DIVISION--------------");
+
+                Console.WriteLine("Ingrese el primer numero");
+                int num1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo numero a dividir");
+                int num2 = int.Parse(Console.ReadLine());
+                int res = num1 / num2;
+
+                Console.WriteLine(" El resultado es : " + res);
+            }
+            else
+            {
+                Console.WriteLine("La opcion es incorrecta , favor de validar");
+            }
+
+
+
+
+
+
+
+
+
+
+            Console.ReadKey();
